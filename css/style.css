@@ -780,8 +780,10 @@ textarea {
   fill: currentColor;
 }
 .contact-icon-footer {
-  margin-right: 10px;
   fill: currentColor;
+}
+.contact-icon-footer:not(:last-child) {
+  margin: 0;
 }
 .is-hidden {
   visibility: hidden;
@@ -962,12 +964,16 @@ textarea {
   margin-top: 40px;
 }
 
-.contact-form-input:hover {
-  color: var(--accent-color);
+.contact-form-input:hover,
+.contact-form-input:focus {
+  fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-.contact-form-input:focus {
-  color: var(--accent-color);
+.contact-form-input:hover,
+.contact-form-svg,
+.contact-form-input:focus,
+.contact-form-svg {
+  fill: var(--accent-color);
   border-color: var(--accent-color);
 }
 .contact-form-text {
