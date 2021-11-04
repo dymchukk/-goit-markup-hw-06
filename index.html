@@ -51,7 +51,7 @@
                        <form class="contact-form">
                         <div class="contact-form-icon">
                            <label class="contact-form-lab">Имя 
-                            <input class="contact-form-input"type="username" name="username" placeholder=" "
+                            <input class="contact-form-input"type="username" name="username" autofocus placeholder=" "
                             reguired 
                             title="Комаров Антон Петрови"/>
                             <svg class="contact-form-svg" width="12" height="12">
@@ -85,7 +85,7 @@
                            </label>
                         <div class="contact-form-icon">
                            <label class="contact-form-text">Комментарий
-                           <textarea name="username" placeholder="Введите текст"></textarea>
+                           <textarea  class="contact-form-area"name="username"placeholder="Введите текст" ></textarea>
                            </label>
                            </div>
                            <div class="chacbox">
@@ -444,14 +444,18 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <h2 class="">Подпишитесь на рассылку</h2>
-            <form>
+        <div class="contact-form-footer">
+            <h2 class="contact-footter-text">Подпишитесь на рассылку</h2>
+            <form class="colform">
                 <label>
-                    <input class="contact-form-input" type="email" name="username" placeholder="E-mail"
-                               reguired
-                               pattern="g0to@mail.com"/>
+                    <input class="contact-form-input-footer" type="email" name="username" placeholder="E-mail"/>
                 </label>
+                <button class="contact-btn-footer" type="button" width="200" height="50">Подписаться
+                    <svg class="contact-icon-footer" width="24" height="24">
+                        <use href="./images/icons.svg#icon-icon-send">
+                        </use>
+                    </svg>
+                </button>
             </form>
         </div>
         </div>
