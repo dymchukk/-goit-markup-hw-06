@@ -969,13 +969,6 @@ textarea {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-.contact-form-input:hover,
-.contact-form-svg,
-.contact-form-input:focus,
-.contact-form-svg {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-}
 .contact-form-text {
   font-size: 12px;
   line-height: 14px;
