@@ -891,8 +891,7 @@ textarea {
 .project-link:focus .portfolio-overlay {
   transform: translateY(0);
 }
-.contact-form {
-}
+
 .contact-form-btn {
   display: block;
   margin: auto;
