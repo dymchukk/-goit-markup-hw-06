@@ -1033,26 +1033,37 @@ textarea {
   fill: var(--accent-color);
 }
 .contact-form-chackbox {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 24px;
+  line-height: 1, 71;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
 }
+
 .contact-form-chackbox::before {
   display: block;
   content: '';
   border: 1px solid var(--accent-color);
-  width: 18px;
-  height: 18px;
+  background-image: url('../images/check.svg');
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
   cursor: pointer;
 }
+
 .contact-form-conditions:checked + .contact-form-chackbox::before {
   background-color: var(--accent-color);
 }
+
+.contact-form-a {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
 .contact-form-icon {
   display: block;
   margin-top: 6px;
