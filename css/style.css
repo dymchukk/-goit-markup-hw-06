@@ -1055,7 +1055,7 @@ textarea {
   cursor: pointer;
 }
 
-.contact-form-conditions:checked + .contact-form-chackbox::before {
+.contact-form-conditions:focus + .contact-form-chackbox::before {
   background-color: var(--accent-color);
 }
 
