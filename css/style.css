@@ -1042,6 +1042,17 @@ textarea {
   color: #757575;
   cursor: pointer;
 }
+.contact-form-chackbox::before {
+  display: block;
+  content: '';
+  border: 1px solid var(--accent-color);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.contact-form-conditions:checked + .contact-form-chackbox::before {
+  background-color: var(--accent-color);
+}
 .contact-form-icon {
   display: block;
   margin-top: 6px;
