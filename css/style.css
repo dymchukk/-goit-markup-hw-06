@@ -1055,18 +1055,14 @@ textarea {
 
 .chackbox-icon {
   border: 2px solid #212121;
+  border-radius: 4px;
   width: 18px;
   height: 18px;
   margin-right: 7px;
 }
-/*
-.contact-form-conditions:checked {
-  background: var(--accent-color);
-  background-image: url(../images/icon-check.svg);*/
-}
-.contact-form-conditions:checked{
-  background-color: var(--accent-color);
-
+.contact-form-conditions:checked ~ .chackbox-icon {
+  border-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
 }
 .contact-form-a {
   text-decoration: underline;
@@ -1126,7 +1122,6 @@ textarea {
   background-color: var(--accent-color);
 }
 
-
 /*
 .contact-btn-footer::after {
   content: '';
@@ -1152,7 +1147,7 @@ textarea {
 .colform {
   display: flex;
 }
-.colform-lbl{
+.colform-lbl {
   margin: 0;
-   margin-right: 12px;
+  margin-right: 12px;
 }
